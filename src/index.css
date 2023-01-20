@@ -1,0 +1,1866 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: Patriciana;
+    src: url(fonts/320-font.otf);
+}
+
+@font-face {
+    font-family: Jost;
+    src: url(fonts/jost-3-cufonfonts/Jost-Black.ttf);
+}
+
+.modal-text {
+    animation: down 1s infinite linear;
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(30px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+.modal-setting {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.ReactModal__Overlay--after-open {
+    background: rgba(0, 0, 0, 0.25);
+}
+.slick-list {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.modal-content {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+
+    background: white;
+    width: 80vw;
+    height: 90vh;
+    overflow: auto;
+    padding-top: 50px;
+    animation: modal 1s;
+}
+
+@keyframes modal {
+    0% {
+        transform: translateY(50%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.modal-content::-webkit-scrollbar{width: 0}
+
+
+.swich {
+    height: 705px;
+    width: 160px;
+    margin: 0 auto 0 -5%;
+}
+
+.swich p {
+    text-align: center;
+    padding-top: -105px;
+    margin-left: -10%;
+    animation: ani 5s infinite linear;
+    white-space: nowrap;
+    font-family: "Patriciana", sans-serif;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 111px;
+    color: #000000;
+    rotate: -90deg;
+}
+
+
+@keyframes ani {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-700%, 0);
+    }
+}
+
+.text {
+    height: 705px;
+    width: 160px;
+    margin: 0 auto;
+}
+
+.text p {
+    text-align: center;
+    /*text-transform: uppercase;*/
+    padding-top: -35px;
+    margin-left: -10%;
+    font-family: "Patriciana", sans-serif;
+    animation: text 5s infinite linear;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 111px;
+    color: #000000;
+    rotate: -90deg;
+}
+
+@keyframes text {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-1000%, 0);
+    }
+}
+
+@media (max-width: 1280px) {
+    .hero {
+        border: none
+    }
+
+    .video-border {
+        border: none
+    }
+
+    .our-cottages-team {
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-border {
+        border: none
+    }
+
+    .image {
+        margin-left: 50%;
+    }
+
+    .our-cottages {
+        margin-left: -10%;
+    }
+
+    .text {
+        margin-left: -45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .our-text {
+        width: 500px;
+    }
+    .swich {
+        margin: 0 auto 0 20%;
+
+    }
+
+    .key-person {
+        flex-direction: column;
+    }
+
+    .ke {
+        margin-left: 30%;
+    }
+
+    .image {
+        margin-left: -5%;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .header {
+        /*width: 35%;*/
+        left: 70px;
+    }
+
+    .hero {
+        display: flex;
+    }
+
+    .title {
+        padding-top: 40px;
+    }
+
+    .img {
+        width: 500px;
+        height: 810px;
+    }
+
+    .watch {
+        flex-direction: column;
+    }
+
+    .watch-see {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .watch-q {
+        display: flex;
+    }
+
+    .image {
+        width: 700px;
+        height: 700px;
+    }
+
+    .foto {
+        height: 344px;
+        width: 433px;
+    }
+
+    .our-cottages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-cottages-team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-cottages-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-cottages-w {
+        margin-bottom: 0;
+    }
+
+    .our-cottages-e {
+        margin: 0;
+    }
+
+    .foto-s {
+        display: none;
+    }
+
+    .line {
+        rotate: 90deg;
+        margin: -150px -150px -150px 200px;
+    }
+
+    .partners {
+        flex-direction: column;
+        margin-left: 15%;
+    }
+
+    .li {
+        margin: 0;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .key {
+        margin-left: -22%;
+    }
+
+    .video {
+        margin-left: -30%;
+    }
+
+    .request {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .request-q {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .line-q {
+        margin-left: 150px;
+    }
+
+}
+
+@media (max-width: 834px) {
+    .our-cottages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-cottages-team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-cottages-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        width: 330px;
+        left: 80px;
+    }
+
+    .key {
+        margin-left: -22%;
+    }
+
+    .line-q {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        width: 330px;
+        left: 80px;
+    }
+
+    .request {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .line-q {
+        margin-left: 150px;
+    }
+
+    .hero {
+        display: flex;
+    }
+
+    .title {
+        padding-top: 100px;
+    }
+
+    .img {
+        width: 380px;
+        height: 810px;
+    }
+
+    .watch {
+        flex-direction: column;
+    }
+
+    .watch-see {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .watch-q {
+        display: flex;
+    }
+
+    .image {
+        width: 550px;
+        height: 700px;
+        margin-left: -2%;
+    }
+
+    .foto {
+        height: 344px;
+        width: 433px;
+    }
+
+    .our-cottages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-cottages-team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-cottages-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-cottages-w {
+        margin-bottom: 0;
+    }
+
+    .our-cottages-e {
+        margin: 0;
+    }
+
+    .foto-s {
+        display: none;
+    }
+
+    .line {
+        rotate: 90deg;
+        margin: -150px -150px -150px 200px;
+    }
+
+    .partners {
+        flex-direction: column;
+        margin-left: 15%;
+    }
+
+    .li {
+        margin: 0;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .key {
+        margin-left: -15%;
+    }
+}
+
+@media (max-width: 576px) {
+    .href-a {
+        margin: 50px;
+    }
+
+    .request-img {
+        display: none;
+    }
+
+    .person {
+        width: 296px;
+        height: 394px;
+    }
+
+    .our-text {
+        width: 385px;
+    }
+
+    .our-cottages-item {
+        margin-top: 25px;
+        margin-left: -35%;
+    }
+
+    .our-cottages-team {
+        margin-top: 25px;
+        margin-left: -70%;
+    }
+
+    .two-second {
+        margin: 40px 0;
+    }
+
+    .two {
+        margin: 30px 40px;
+    }
+
+    .our-team {
+        display: flex;
+    }
+
+    .foto-see {
+        display: block;
+    }
+
+    .our-item {
+        display: none;
+    }
+
+    .our-item-icon {
+        display: block;
+    }
+
+    .about-item {
+        flex-direction: column;
+    }
+
+    .about-title {
+        display: none;
+    }
+
+    .about-title-item {
+        display: flex;
+        padding-top: 15px;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .watch-one {
+        margin: 30px 0;
+    }
+
+    .about-image {
+        display: block;
+    }
+
+    .about {
+        margin-left: -55%;
+        margin-top: 10px;
+    }
+
+    .image-video {
+        height: 360px;
+        display: block;
+        width: 200px;
+    }
+
+    .image-watch {
+        display: none;
+    }
+
+    .logo-3 {
+        display: none;
+    }
+
+    .hero-p {
+        padding-left: 55%;
+        padding-top: 0;
+    }
+
+    .img-item {
+        height: 470px;
+        display: block;
+        width: 400px;
+    }
+
+    .header-general {
+        display: none;
+    }
+
+    .header-title {
+        display: block;
+    }
+
+    .header-bg {
+        width: 580px;
+        height: 70px;
+    }
+
+    .header {
+        width: 330px;
+        left: 0;
+        top: 70px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .log-2 {
+        display: block;
+        /*padding-left: 55%;*/
+        /*padding-top: 4%;*/
+    }
+
+    .video {
+        margin-left: -40%;
+    }
+
+    .request {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .line-q {
+        margin-left: 150px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        padding-top: 17px;
+    }
+
+    .img {
+        display: none;
+        width: 400px;
+        height: 400px;
+    }
+
+    .watch {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .watch-see {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .watch-q {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        width: 700px;
+        height: 700px;
+        display: none;
+    }
+
+    .foto {
+        display: none;
+        height: 344px;
+        width: 433px;
+    }
+
+    .our-cottages {
+        flex-direction: column;
+        align-items: center;
+        margin-left: -30%;
+        margin-top: 15px;
+    }
+
+    .our-cottages-w {
+        margin-bottom: 0;
+    }
+
+    .our-cottages-e {
+        margin: 0;
+    }
+
+    .foto-s {
+        display: none;
+    }
+
+    .line {
+        rotate: 90deg;
+        margin: -150px -150px -150px 200px;
+    }
+
+    .partners {
+        flex-direction: column;
+        margin-left: 15%;
+    }
+
+    .li {
+        margin: 0;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .key {
+        margin-left: -13%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-q {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 428px) {
+    .person {
+        width: 165px;
+        height: 256px;
+    }
+
+    .logo-2 {
+        padding-left: 30%;
+    }
+
+    .swich {
+        display: none;
+    }
+
+    .about {
+        margin-top: 25px;
+    }
+
+    .about-title {
+        display: none;
+    }
+
+    .about-title-item {
+        display: none;
+    }
+
+    .request-input {
+        padding: 15px 50px;
+    }
+
+    .request-img {
+        display: none;
+    }
+
+
+    .image-watch {
+        display: none;
+        height: 400px;
+        width: 300px;
+    }
+
+    .image-watch-item {
+        display: none;
+        height: 400px;
+        width: 300px;
+    }
+
+    .hero-p {
+        padding-top: 0;
+    }
+
+    .header {
+        width: 330px;
+        left: 80px;
+    }
+
+    .video {
+        margin-left: -40%;
+    }
+
+    .request {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .line-q {
+        margin-left: 150px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        margin-top: -5%;
+    }
+
+    .title {
+        padding-top: 17px;
+    }
+
+    .img {
+        display: none;
+        width: 400px;
+        height: 400px;
+    }
+
+    .img-item {
+        display: block;
+        width: 400px;
+        height: 400px;
+    }
+
+    .watch {
+        flex-direction: column;
+        margin-left: -10px;
+        margin-top: 90px;
+    }
+
+    .watch-see {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .watch-q {
+        display: flex;
+        /*padding: 100px;*/
+    }
+
+    .image {
+        width: 368px;
+        margin-left: 187px;
+        height: 500px;
+    }
+
+    .foto {
+        display: none;
+        height: 344px;
+        width: 433px;
+    }
+
+    .foto-see {
+        height: 250px;
+        display: block;
+        width: 300px;
+    }
+
+    .our-text {
+        width: 320px;
+    }
+
+    .our-cottages {
+        margin-top: -10%;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -34%;
+    }
+
+    .our-cottages-item {
+        margin-top: -20%;
+        margin-left: -70%;
+    }
+
+    .our-cottages-team {
+        margin-top: -20%;
+        margin-left: -70%;
+    }
+
+    .our-cottages-w {
+        margin-bottom: 0;
+    }
+
+    .our-cottages-e {
+        margin: 0;
+    }
+
+    .foto-s {
+        display: none;
+    }
+
+    .line {
+        rotate: 90deg;
+        margin: -150px -150px -150px 200px;
+    }
+
+    .partners {
+        flex-direction: column;
+        margin-left: 15%;
+    }
+
+    .li {
+        margin: 0;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .key {
+        margin-left: -5%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-q {
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 415px) {
+    .person {
+        width: 165px;
+        height: 256px;
+    }
+
+    .logo-2 {
+        padding-left: 30%;
+    }
+
+    .swich {
+        display: none;
+    }
+
+    .about {
+        margin-top: 25px;
+    }
+
+    .about-title {
+        display: none;
+    }
+
+    .about-title-item {
+        display: none;
+    }
+
+    .request-input {
+        padding: 15px 50px;
+    }
+
+    .request-img {
+        display: none;
+    }
+
+
+    .image-watch {
+        display: none;
+        height: 400px;
+        width: 300px;
+    }
+
+    .image-watch-item {
+        display: none;
+        height: 400px;
+        width: 300px;
+    }
+
+    .hero-p {
+        padding-top: 0;
+    }
+
+    .header {
+        width: 330px;
+        left: 10px;
+    }
+
+    .video {
+        margin-left: -40%;
+    }
+
+    .request {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .line-q {
+        margin-left: 150px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        margin-top: -5%;
+    }
+
+    .title {
+        padding-top: 17px;
+    }
+
+    .img {
+        display: none;
+        width: 400px;
+        height: 400px;
+    }
+
+    .img-item {
+        display: block;
+        width: 400px;
+        height: 400px;
+    }
+
+    .watch {
+        flex-direction: column;
+        margin-left: -10px;
+        margin-top: 90px;
+    }
+
+    .watch-see {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .watch-q {
+        display: flex;
+        /*padding: 100px;*/
+    }
+
+    .image {
+        width: 368px;
+        margin-left: 187px;
+        height: 500px;
+    }
+
+    .foto {
+        display: none;
+        height: 344px;
+        width: 433px;
+    }
+
+    .foto-see {
+        height: 250px;
+        display: block;
+        width: 300px;
+    }
+
+    .our-text {
+        width: 320px;
+    }
+
+    .our-cottages {
+        margin-top: -10%;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -34%;
+    }
+
+    .our-cottages-item {
+        margin-top: -20%;
+        margin-left: -70%;
+    }
+
+    .our-cottages-team {
+        margin-top: -20%;
+        margin-left: -70%;
+    }
+
+    .our-cottages-w {
+        margin-bottom: 0;
+    }
+
+    .our-cottages-e {
+        margin: 0;
+    }
+
+    .foto-s {
+        display: none;
+    }
+
+    .line {
+        rotate: 90deg;
+        margin: -150px -150px -150px 200px;
+    }
+
+    .partners {
+        flex-direction: column;
+        margin-left: 15%;
+    }
+
+    .li {
+        margin: 0;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .key {
+        margin-left: -5%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-q {
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 391px) {
+    .person {
+        width: 165px;
+        height: 256px;
+    }
+
+    .logo-2 {
+        padding-left: 25%;
+    }
+
+    .swich {
+        display: none;
+    }
+
+    .about {
+        margin-top: 25px;
+    }
+
+    .about-title {
+        display: none;
+    }
+
+    .about-title-item {
+        display: none;
+    }
+
+    .request-input {
+        padding: 15px 50px;
+    }
+
+    .request-img {
+        display: none;
+    }
+
+
+    .image-watch {
+        display: none;
+        height: 400px;
+        width: 300px;
+    }
+
+    .image-watch-item {
+        display: none;
+        height: 400px;
+        width: 300px;
+    }
+
+    .hero-p {
+        padding-top: 0;
+    }
+
+    .header {
+        width: 330px;
+        left: 80px;
+    }
+
+    .video {
+        margin-left: -40%;
+    }
+
+    .request {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .line-q {
+        margin-left: 150px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        margin-top: -50%;
+    }
+
+    .title {
+        padding-top: 17px;
+    }
+
+    .img {
+        display: none;
+        width: 400px;
+        height: 400px;
+    }
+
+    .img-item {
+        display: block;
+        width: 400px;
+        height: 220px;
+    }
+
+    .watch {
+        flex-direction: column;
+        margin-left: -10px;
+        margin-top: -15px;
+    }
+
+    .watch-see {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .watch-q {
+        display: flex;
+        /*padding: 100px;*/
+    }
+
+    .image {
+        width: 368px;
+        margin-left: 187px;
+        height: 500px;
+    }
+
+    .foto {
+        display: none;
+        height: 344px;
+        width: 433px;
+    }
+
+    .foto-see {
+        height: 250px;
+        display: block;
+        width: 300px;
+    }
+
+    .our-text {
+        width: 320px;
+    }
+
+    .our-cottages {
+        margin-top: -10%;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -34%;
+    }
+
+    .our-cottages-item {
+        margin-top: -20%;
+        margin-left: -70%;
+    }
+
+    .our-cottages-team {
+        margin-top: -20%;
+        margin-left: -70%;
+    }
+
+    .our-cottages-w {
+        margin-bottom: 0;
+    }
+
+    .our-cottages-e {
+        margin: 0;
+    }
+
+    .foto-s {
+        display: none;
+    }
+
+    .line {
+        rotate: 90deg;
+        margin: -150px -150px -150px 200px;
+    }
+
+    .partners {
+        flex-direction: column;
+        margin-left: 15%;
+    }
+
+    .li {
+        margin: 0;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .key {
+        margin-left: -5%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-q {
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 376px) {
+    .person {
+        width: 165px;
+        height: 256px;
+    }
+
+    .logo-2 {
+        padding-left: 30%;
+    }
+
+    .swich {
+        display: none;
+    }
+
+    .about {
+        margin-top: 25px;
+    }
+
+    .about-title {
+        display: none;
+    }
+
+    .about-title-item {
+        display: none;
+    }
+
+    .request-input {
+        padding: 15px 50px;
+    }
+
+    .request-img {
+        display: none;
+    }
+
+
+    .image-watch {
+        display: none;
+        height: 400px;
+        width: 300px;
+    }
+
+    .image-watch-item {
+        display: none;
+        height: 400px;
+        width: 300px;
+    }
+
+    .hero-p {
+        padding-top: 0;
+    }
+
+    .header {
+        width: 330px;
+        left: 0;
+    }
+
+    .video {
+        margin-left: -40%;
+    }
+
+    .request {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .line-q {
+        margin-left: 150px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        margin-top: -48%;
+    }
+
+    .title {
+        padding-top: 17px;
+    }
+
+    .img {
+        display: none;
+        width: 400px;
+        height: 400px;
+    }
+
+    .img-item {
+        display: block;
+        width: 400px;
+        height: 250px;
+    }
+
+    .watch {
+        flex-direction: column;
+        margin-left: -10px;
+        margin-top: -35px;
+    }
+
+    .watch-see {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .watch-q {
+        display: flex;
+        /*padding: 100px;*/
+    }
+
+    .image {
+        width: 368px;
+        margin-left: 187px;
+        height: 500px;
+    }
+
+    .foto {
+        display: none;
+        height: 344px;
+        width: 433px;
+    }
+
+    .foto-see {
+        height: 250px;
+        display: block;
+        width: 300px;
+    }
+
+    .our-text {
+        width: 320px;
+    }
+
+    .our-cottages {
+        margin-top: -10%;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -34%;
+    }
+
+    .our-cottages-item {
+        margin-top: -20%;
+        margin-left: -70%;
+    }
+
+    .our-cottages-team {
+        margin-top: -20%;
+        margin-left: -70%;
+    }
+
+    .our-cottages-w {
+        margin-bottom: 0;
+    }
+
+    .our-cottages-e {
+        margin: 0;
+    }
+
+    .foto-s {
+        display: none;
+    }
+
+    .line {
+        rotate: 90deg;
+        margin: -150px -150px -150px 200px;
+    }
+
+    .partners {
+        flex-direction: column;
+        margin-left: 15%;
+        margin-top: -40%;
+    }
+
+    .li {
+        margin: 0;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .key {
+        margin-left: -5%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-q {
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 361px) {
+    .person {
+        width: 140px;
+        height: 256px;
+    }
+
+    .watch-one {
+        display: none;
+    }
+
+    .logo-2 {
+        padding-left: 20%;
+    }
+
+    .swich {
+        display: none;
+    }
+
+    .about {
+        margin-top: 25px;
+    }
+
+    .about-title {
+        display: none;
+    }
+
+    .about-title-item {
+        display: none;
+    }
+
+    .request-input {
+        padding: 15px 50px;
+    }
+
+    .request-img {
+        display: none;
+    }
+
+
+    .image-watch {
+        display: none;
+        height: 400px;
+        width: 300px;
+    }
+
+    .image-watch-item {
+        display: none;
+        height: 400px;
+        width: 300px;
+    }
+
+    .hero-p {
+        padding-top: 0;
+    }
+
+    .header {
+        width: 330px;
+        left: 0;
+    }
+
+    .video {
+        margin-left: -40%;
+    }
+
+    .request {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .line-q {
+        margin-left: 150px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        margin-top: -65%;
+    }
+
+    .title {
+        padding-top: 17px;
+    }
+
+    .img {
+        display: none;
+        width: 400px;
+        height: 400px;
+    }
+
+    .img-video {
+        height: 250px;
+
+    }
+
+    .img-item {
+        display: block;
+        width: 400px;
+        height: 200px;
+    }
+
+    .watch {
+        flex-direction: column;
+        margin-left: -10px;
+        margin-top: -100px;
+    }
+
+    .watch-see {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .watch-q {
+        display: flex;
+        /*padding: 100px;*/
+    }
+
+    .image {
+        width: 368px;
+        margin-left: 187px;
+        height: 500px;
+    }
+
+    .foto {
+        display: none;
+        height: 344px;
+        width: 433px;
+    }
+
+    .foto-see {
+        height: 250px;
+        display: block;
+        width: 300px;
+    }
+
+    .our-text {
+        width: 320px;
+    }
+
+    .our-cottages {
+        margin-top: -10%;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -34%;
+    }
+
+    .our-cottages-item {
+        margin-top: -20%;
+        margin-left: -70%;
+    }
+
+    .our-cottages-team {
+        margin-top: -20%;
+        margin-left: -70%;
+    }
+
+    .our-cottages-w {
+        margin-bottom: 0;
+    }
+
+    .our-cottages-e {
+        margin: 0;
+    }
+
+    .foto-s {
+        display: none;
+    }
+
+    .line {
+        rotate: 90deg;
+        margin: -150px -150px -150px 200px;
+    }
+
+    .partners {
+        flex-direction: column;
+        margin-left: 15%;
+    }
+
+    .li {
+        margin: 0;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .key {
+        margin-left: -5%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-q {
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 321px) {
+    .person {
+        width: 120px;
+        height: 236px;
+    }
+
+    .logo-2 {
+        padding-left: 15%;
+    }
+
+    .swich {
+        display: none;
+    }
+
+    .about {
+        margin-top: 25px;
+    }
+
+    .about-title {
+        display: none;
+    }
+
+    .about-title-item {
+        display: none;
+    }
+
+    .request-input {
+        padding: 15px 50px;
+    }
+
+    .request-img {
+        display: none;
+    }
+
+
+    .image-watch {
+        display: none;
+        height: 400px;
+        width: 300px;
+    }
+
+    .image-watch-item {
+        display: none;
+        height: 400px;
+        width: 300px;
+    }
+
+    .hero-p {
+        padding-top: 0;
+    }
+
+    .header {
+        width: 330px;
+        left: 0;
+    }
+
+    .video {
+        margin-left: -40%;
+    }
+
+    .request {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .line-q {
+        margin-left: 150px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        margin-top: -5%;
+    }
+
+    .title {
+        padding-top: 17px;
+    }
+
+    .img {
+        display: none;
+        width: 400px;
+        height: 400px;
+    }
+
+    .img-item {
+        display: block;
+        width: 400px;
+        height: 400px;
+    }
+
+    .watch {
+        flex-direction: column;
+        margin-left: -10px;
+        margin-top: 90px;
+    }
+
+    .watch-see {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .watch-q {
+        display: flex;
+        /*padding: 100px;*/
+    }
+
+    .image {
+        width: 368px;
+        margin-left: 187px;
+        height: 500px;
+    }
+
+    .foto {
+        display: none;
+        height: 344px;
+        width: 433px;
+    }
+
+    .foto-see {
+        height: 250px;
+        display: block;
+        width: 300px;
+    }
+
+    .our-text {
+        width: 320px;
+    }
+
+    .our-cottages {
+        margin-top: -10%;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -34%;
+    }
+
+    .our-cottages-item {
+        margin-top: -20%;
+        margin-left: -70%;
+    }
+
+    .our-cottages-team {
+        margin-top: -20%;
+        margin-left: -70%;
+    }
+
+    .our-cottages-w {
+        margin-bottom: 0;
+    }
+
+    .our-cottages-e {
+        margin: 0;
+    }
+
+    .foto-s {
+        display: none;
+    }
+
+    .line {
+        rotate: 90deg;
+        margin: -150px -150px -150px 200px;
+    }
+
+    .partners {
+        flex-direction: column;
+        margin-left: 15%;
+    }
+
+    .li {
+        margin: 0;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .key {
+        margin-left: -5%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-q {
+        margin: 10px;
+    }
+
+}
